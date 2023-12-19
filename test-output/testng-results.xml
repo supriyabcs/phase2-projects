@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="21" passed="17" failed="3" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-12-18T16:28:50 IST" name="eCom Webapp Test Suite" finished-at="2023-12-18T16:38:43 IST" duration-ms="593750">
+    <groups>
+      <group name="Regression Test">
+        <method signature="AttributeGroupTest.r1()[pri:0, instance:com.phase2.testng.AttributeGroupTest@563f38c4]" name="r1" class="com.phase2.testng.AttributeGroupTest"/>
+        <method signature="AttributeGroupTest.r2()[pri:0, instance:com.phase2.testng.AttributeGroupTest@563f38c4]" name="r2" class="com.phase2.testng.AttributeGroupTest"/>
+        <method signature="AttributeGroupTest.r3()[pri:0, instance:com.phase2.testng.AttributeGroupTest@563f38c4]" name="r3" class="com.phase2.testng.AttributeGroupTest"/>
+      </group> <!-- Regression Test -->
+    </groups>
+    <test started-at="2023-12-18T16:28:50 IST" name="Amazon Test" finished-at="2023-12-18T16:38:42 IST" duration-ms="592813">
+      <class name="com.phase2.testng.amazon.AmazonLinkVerificationCssSelectorTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.phase2.testng.amazon.AmazonLinkVerificationCssSelectorTest@52719fb6]" started-at="2023-12-18T16:31:11 IST" name="setUp" finished-at="2023-12-18T16:31:46 IST" duration-ms="35211" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tdLinkTest1()[pri:0, instance:com.phase2.testng.amazon.AmazonLinkVerificationCssSelectorTest@52719fb6]" started-at="2023-12-18T16:31:46 IST" name="tdLinkTest1" description="Test Amazon Mobile Phones Title Match" finished-at="2023-12-18T16:31:58 IST" duration-ms="12446" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tdLinkTest1 -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.phase2.testng.amazon.AmazonLinkVerificationCssSelectorTest@52719fb6]" started-at="2023-12-18T16:31:58 IST" name="cleanUp" finished-at="2023-12-18T16:32:12 IST" duration-ms="13835" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.phase2.testng.amazon.AmazonLinkVerificationCssSelectorTest@52719fb6]" started-at="2023-12-18T16:32:12 IST" name="setUp" finished-at="2023-12-18T16:33:07 IST" duration-ms="55337" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="tdLinkTest2()[pri:0, instance:com.phase2.testng.amazon.AmazonLinkVerificationCssSelectorTest@52719fb6]" started-at="2023-12-18T16:33:07 IST" name="tdLinkTest2" description="Test Amazon Mobile Phones Title Match" finished-at="2023-12-18T16:33:20 IST" duration-ms="12239" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tdLinkTest2 -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.phase2.testng.amazon.AmazonLinkVerificationCssSelectorTest@52719fb6]" started-at="2023-12-18T16:33:20 IST" name="cleanUp" finished-at="2023-12-18T16:33:38 IST" duration-ms="18746" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+      </class> <!-- com.phase2.testng.amazon.AmazonLinkVerificationCssSelectorTest -->
+      <class name="com.phase2.testng.amazon.AmazonSearchTest">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.phase2.testng.amazon.AmazonSearchTest@25641d39]" started-at="2023-12-18T16:37:38 IST" name="beforeClass" finished-at="2023-12-18T16:38:19 IST" duration-ms="40759" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="testSearch1()[pri:0, instance:com.phase2.testng.amazon.AmazonSearchTest@25641d39]" started-at="2023-12-18T16:38:19 IST" name="testSearch1" description="Search Iphone 15 pro max" finished-at="2023-12-18T16:38:26 IST" duration-ms="6550" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearch1 -->
+        <test-method signature="testSearch2()[pri:0, instance:com.phase2.testng.amazon.AmazonSearchTest@25641d39]" started-at="2023-12-18T16:38:26 IST" name="testSearch2" description="Search Iphone 15 pro max" finished-at="2023-12-18T16:38:30 IST" duration-ms="4271" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Amazon.in : Apple Mac book] but found []]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Amazon.in : Apple Mac book] but found []
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at com.phase2.testng.amazon.AmazonSearchTest.testSearch2(AmazonSearchTest.java:67)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearch2 -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.phase2.testng.amazon.AmazonSearchTest@25641d39]" started-at="2023-12-18T16:38:30 IST" name="afterClass" finished-at="2023-12-18T16:38:42 IST" duration-ms="12391" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.phase2.testng.amazon.AmazonSearchTest -->
+      <class name="com.phase2.testng.amazon.AmazonHomepageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.phase2.testng.amazon.AmazonHomepageTest@550dbc7a]" started-at="2023-12-18T16:28:50 IST" name="setUp" finished-at="2023-12-18T16:29:28 IST" duration-ms="38391" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testAmazonHomePageSourceUrl()[pri:0, instance:com.phase2.testng.amazon.AmazonHomepageTest@550dbc7a]" started-at="2023-12-18T16:29:28 IST" name="testAmazonHomePageSourceUrl" description="Test Amazon Home Page Source Url" finished-at="2023-12-18T16:29:29 IST" duration-ms="228" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAmazonHomePageSourceUrl -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.phase2.testng.amazon.AmazonHomepageTest@550dbc7a]" started-at="2023-12-18T16:29:29 IST" name="cleanUp" finished-at="2023-12-18T16:29:42 IST" duration-ms="13015" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.phase2.testng.amazon.AmazonHomepageTest@550dbc7a]" started-at="2023-12-18T16:29:42 IST" name="setUp" finished-at="2023-12-18T16:30:15 IST" duration-ms="33281" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testAmazonHomePageTitle()[pri:0, instance:com.phase2.testng.amazon.AmazonHomepageTest@550dbc7a]" started-at="2023-12-18T16:30:15 IST" name="testAmazonHomePageTitle" description="Test Amazon Home Page Title Match" finished-at="2023-12-18T16:30:15 IST" duration-ms="58" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAmazonHomePageTitle -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.phase2.testng.amazon.AmazonHomepageTest@550dbc7a]" started-at="2023-12-18T16:30:15 IST" name="cleanUp" finished-at="2023-12-18T16:30:27 IST" duration-ms="11626" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.phase2.testng.amazon.AmazonHomepageTest@550dbc7a]" started-at="2023-12-18T16:30:27 IST" name="setUp" finished-at="2023-12-18T16:30:58 IST" duration-ms="31864" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testAmazonHomePageTitle2()[pri:0, instance:com.phase2.testng.amazon.AmazonHomepageTest@550dbc7a]" started-at="2023-12-18T16:30:58 IST" name="testAmazonHomePageTitle2" description="Test Amazon Home Page Title Invalid Match" finished-at="2023-12-18T16:30:58 IST" duration-ms="50" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAmazonHomePageTitle2 -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.phase2.testng.amazon.AmazonHomepageTest@550dbc7a]" started-at="2023-12-18T16:30:59 IST" name="cleanUp" finished-at="2023-12-18T16:31:10 IST" duration-ms="11992" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+      </class> <!-- com.phase2.testng.amazon.AmazonHomepageTest -->
+      <class name="com.phase2.testng.amazon.AmazonLinkVerificationXpathTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.phase2.testng.amazon.AmazonLinkVerificationXpathTest@4a883b15]" started-at="2023-12-18T16:35:55 IST" name="setUp" finished-at="2023-12-18T16:36:29 IST" duration-ms="33901" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="xpathLinkTest1()[pri:0, instance:com.phase2.testng.amazon.AmazonLinkVerificationXpathTest@4a883b15]" started-at="2023-12-18T16:36:29 IST" name="xpathLinkTest1" description="Test Amazon Mobile Phones Title Match" finished-at="2023-12-18T16:36:41 IST" duration-ms="12109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- xpathLinkTest1 -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.phase2.testng.amazon.AmazonLinkVerificationXpathTest@4a883b15]" started-at="2023-12-18T16:36:41 IST" name="cleanUp" finished-at="2023-12-18T16:36:54 IST" duration-ms="12864" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.phase2.testng.amazon.AmazonLinkVerificationXpathTest@4a883b15]" started-at="2023-12-18T16:36:54 IST" name="setUp" finished-at="2023-12-18T16:37:26 IST" duration-ms="32516" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="xpathLinkTest2()[pri:0, instance:com.phase2.testng.amazon.AmazonLinkVerificationXpathTest@4a883b15]" started-at="2023-12-18T16:37:26 IST" name="xpathLinkTest2" description="Test Today deals Title Match" finished-at="2023-12-18T16:37:27 IST" duration-ms="1234" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: /html/body/div[1]/header/div/div[4]/div[2]/div[2]/div/a[5]
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [6fa5097e-2b6a-41a5-bca9-284b632a0b8e, findElement {using=xpath, value=/html/body/div[1]/header/div/div[4]/div[2]/div[2]/div/a[5]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 120.0.1, moz:accessibilityChecks: false, moz:buildID: 20231129155202, moz:debuggerAddress: 127.0.0.1:42521, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 10192, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:42521/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6fa5097e-2b6a-41a5-bca9-284b632a0b8e]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: /html/body/div[1]/header/div/div[4]/div[2]/div[2]/div/a[5]
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [6fa5097e-2b6a-41a5-bca9-284b632a0b8e, findElement {using=xpath, value=/html/body/div[1]/header/div/div[4]/div[2]/div[2]/div/a[5]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 120.0.1, moz:accessibilityChecks: false, moz:buildID: 20231129155202, moz:debuggerAddress: 127.0.0.1:42521, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 10192, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:42521/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6fa5097e-2b6a-41a5-bca9-284b632a0b8e
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+at com.phase2.testng.amazon.AmazonLinkVerificationXpathTest.xpathLinkTest2(AmazonLinkVerificationXpathTest.java:64)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- xpathLinkTest2 -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.phase2.testng.amazon.AmazonLinkVerificationXpathTest@4a883b15]" started-at="2023-12-18T16:37:27 IST" name="cleanUp" finished-at="2023-12-18T16:37:38 IST" duration-ms="11032" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+      </class> <!-- com.phase2.testng.amazon.AmazonLinkVerificationXpathTest -->
+      <class name="com.phase2.testng.amazon.AmazonLinkVerificationTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.phase2.testng.amazon.AmazonLinkVerificationTest@3012646b]" started-at="2023-12-18T16:33:38 IST" name="setUp" finished-at="2023-12-18T16:34:24 IST" duration-ms="45978" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="linkTest1()[pri:0, instance:com.phase2.testng.amazon.AmazonLinkVerificationTest@3012646b]" started-at="2023-12-18T16:34:24 IST" name="linkTest1" description="Test Amazon Mobile Phones Title Match" finished-at="2023-12-18T16:34:32 IST" duration-ms="7651" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- linkTest1 -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.phase2.testng.amazon.AmazonLinkVerificationTest@3012646b]" started-at="2023-12-18T16:34:32 IST" name="cleanUp" finished-at="2023-12-18T16:34:49 IST" duration-ms="16774" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.phase2.testng.amazon.AmazonLinkVerificationTest@3012646b]" started-at="2023-12-18T16:34:49 IST" name="setUp" finished-at="2023-12-18T16:35:32 IST" duration-ms="43388" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="linkTest2()[pri:0, instance:com.phase2.testng.amazon.AmazonLinkVerificationTest@3012646b]" started-at="2023-12-18T16:35:32 IST" name="linkTest2" description="Verify the Todays deals link" finished-at="2023-12-18T16:35:40 IST" duration-ms="8080" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- linkTest2 -->
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:com.phase2.testng.amazon.AmazonLinkVerificationTest@3012646b]" started-at="2023-12-18T16:35:40 IST" name="cleanUp" finished-at="2023-12-18T16:35:55 IST" duration-ms="14434" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+      </class> <!-- com.phase2.testng.amazon.AmazonLinkVerificationTest -->
+    </test> <!-- Amazon Test -->
+    <test started-at="2023-12-18T16:38:43 IST" name="Group Test" finished-at="2023-12-18T16:38:43 IST" duration-ms="408">
+      <class name="com.phase2.testng.AttributeGroupTest">
+        <test-method signature="r1()[pri:0, instance:com.phase2.testng.AttributeGroupTest@563f38c4]" started-at="2023-12-18T16:38:43 IST" name="r1" finished-at="2023-12-18T16:38:43 IST" duration-ms="15" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- r1 -->
+        <test-method signature="r2()[pri:0, instance:com.phase2.testng.AttributeGroupTest@563f38c4]" started-at="2023-12-18T16:38:43 IST" name="r2" finished-at="2023-12-18T16:38:43 IST" duration-ms="234" status="FAIL">
+          <exception class="org.testng.internal.thread.ThreadTimeoutException">
+            <message>
+              <![CDATA[Method com.phase2.testng.AttributeGroupTest.r2() didn't finish within the time-out 200]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.thread.ThreadTimeoutException: Method com.phase2.testng.AttributeGroupTest.r2() didn't finish within the time-out 200
+at java.base@17.0.5/java.lang.Thread.sleep(Native Method)
+at app//com.phase2.testng.AttributeGroupTest.r2(AttributeGroupTest.java:42)
+at java.base@17.0.5/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base@17.0.5/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base@17.0.5/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base@17.0.5/java.lang.reflect.Method.invoke(Method.java:568)
+at app//org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at app//org.testng.internal.invokers.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:47)
+at app//org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:76)
+at app//org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:11)
+at java.base@17.0.5/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base@17.0.5/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.thread.ThreadTimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- r2 -->
+        <test-method signature="r3()[pri:0, instance:com.phase2.testng.AttributeGroupTest@563f38c4]" started-at="2023-12-18T16:38:43 IST" name="r3" depends-on-groups="Regression Test" finished-at="2023-12-18T16:38:43 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method AttributeGroupTest.r3()[pri:0, instance:com.phase2.testng.AttributeGroupTest@563f38c4] depends on not successfully finished methods in group "Regression Test"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method AttributeGroupTest.r3()[pri:0, instance:com.phase2.testng.AttributeGroupTest@563f38c4] depends on not successfully finished methods in group "Regression Test"
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- r3 -->
+        <test-method signature="testOne()[pri:2, instance:com.phase2.testng.AttributeGroupTest@563f38c4]" started-at="2023-12-18T16:38:43 IST" name="testOne" description="The sample Test One" finished-at="2023-12-18T16:38:43 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOne -->
+        <test-method signature="testTwo()[pri:0, instance:com.phase2.testng.AttributeGroupTest@563f38c4]" started-at="2023-12-18T16:38:43 IST" name="testTwo" description="The sample Test Two" finished-at="2023-12-18T16:38:43 IST" depends-on-methods="com.phase2.testng.AttributeGroupTest.testOne, com.phase2.testng.AttributeGroupTest.testThree" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTwo -->
+      </class> <!-- com.phase2.testng.AttributeGroupTest -->
+    </test> <!-- Group Test -->
+    <test started-at="2023-12-18T16:38:43 IST" name="Other Test" finished-at="2023-12-18T16:38:43 IST" duration-ms="126">
+      <class name="com.phase2.testng.AssertionTest">
+        <test-method signature="hardAssertTest()[pri:0, instance:com.phase2.testng.AssertionTest@196a42c3]" started-at="2023-12-18T16:38:43 IST" name="hardAssertTest" description="Hard Assert method Test" finished-at="2023-12-18T16:38:43 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hardAssertTest -->
+        <test-method signature="softAssertTest()[pri:0, instance:com.phase2.testng.AssertionTest@196a42c3]" started-at="2023-12-18T16:38:43 IST" name="softAssertTest" description="Soft Assert method Test" finished-at="2023-12-18T16:38:43 IST" duration-ms="27" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- softAssertTest -->
+        <test-method signature="testAsserts()[pri:0, instance:com.phase2.testng.AssertionTest@196a42c3]" started-at="2023-12-18T16:38:43 IST" name="testAsserts" finished-at="2023-12-18T16:38:43 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAsserts -->
+      </class> <!-- com.phase2.testng.AssertionTest -->
+      <class name="com.phase2.testng.TestNgStandardAnnotationTest">
+        <test-method is-config="true" signature="setupBeforeTestSuite()[pri:0, instance:com.phase2.testng.TestNgStandardAnnotationTest@79e4c792]" started-at="2023-12-18T16:28:50 IST" name="setupBeforeTestSuite" finished-at="2023-12-18T16:28:50 IST" duration-ms="92" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBeforeTestSuite -->
+        <test-method signature="testOne()[pri:0, instance:com.phase2.testng.TestNgStandardAnnotationTest@79e4c792]" started-at="2023-12-18T16:38:43 IST" name="testOne" finished-at="2023-12-18T16:38:43 IST" duration-ms="15" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOne -->
+        <test-method is-config="true" signature="setupBeforeClass()[pri:0, instance:com.phase2.testng.TestNgStandardAnnotationTest@79e4c792]" started-at="2023-12-18T16:38:43 IST" name="setupBeforeClass" finished-at="2023-12-18T16:38:43 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBeforeClass -->
+        <test-method is-config="true" signature="setupBeforeTestMethod()[pri:0, instance:com.phase2.testng.TestNgStandardAnnotationTest@79e4c792]" started-at="2023-12-18T16:38:43 IST" name="setupBeforeTestMethod" finished-at="2023-12-18T16:38:43 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBeforeTestMethod -->
+        <test-method is-config="true" signature="cleanAfterTestMethod()[pri:0, instance:com.phase2.testng.TestNgStandardAnnotationTest@79e4c792]" started-at="2023-12-18T16:38:43 IST" name="cleanAfterTestMethod" finished-at="2023-12-18T16:38:43 IST" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanAfterTestMethod -->
+        <test-method is-config="true" signature="setupBeforeTestMethod()[pri:0, instance:com.phase2.testng.TestNgStandardAnnotationTest@79e4c792]" started-at="2023-12-18T16:38:43 IST" name="setupBeforeTestMethod" finished-at="2023-12-18T16:38:43 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBeforeTestMethod -->
+        <test-method signature="testTwo()[pri:0, instance:com.phase2.testng.TestNgStandardAnnotationTest@79e4c792]" started-at="2023-12-18T16:38:43 IST" name="testTwo" finished-at="2023-12-18T16:38:43 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTwo -->
+        <test-method is-config="true" signature="cleanAfterTestMethod()[pri:0, instance:com.phase2.testng.TestNgStandardAnnotationTest@79e4c792]" started-at="2023-12-18T16:38:43 IST" name="cleanAfterTestMethod" finished-at="2023-12-18T16:38:43 IST" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanAfterTestMethod -->
+        <test-method is-config="true" signature="cleanAfterClass()[pri:0, instance:com.phase2.testng.TestNgStandardAnnotationTest@79e4c792]" started-at="2023-12-18T16:38:43 IST" name="cleanAfterClass" finished-at="2023-12-18T16:38:43 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanAfterClass -->
+        <test-method is-config="true" signature="cleanAfterTestSuite()[pri:0, instance:com.phase2.testng.TestNgStandardAnnotationTest@79e4c792]" started-at="2023-12-18T16:38:43 IST" name="cleanAfterTestSuite" finished-at="2023-12-18T16:38:43 IST" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanAfterTestSuite -->
+      </class> <!-- com.phase2.testng.TestNgStandardAnnotationTest -->
+    </test> <!-- Other Test -->
+  </suite> <!-- eCom Webapp Test Suite -->
+</testng-results>
